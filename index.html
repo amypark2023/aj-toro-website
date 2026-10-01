@@ -109,6 +109,8 @@ section{padding-block:96px}
 .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
 .tile{margin:0;position:relative;overflow:hidden;background:var(--navy-2)}
 .tile img{width:100%;aspect-ratio:3/4;object-fit:cover;transition:transform .5s ease}
+.tile.wide{grid-column:span 2}
+.tile.wide img{aspect-ratio:3/2;object-position:center 55%}
 .tile:hover img{transform:scale(1.04)}
 .tile figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 14px 14px;color:#fff;background:linear-gradient(transparent,rgba(5,18,27,.88))}
 .photo-note{margin-top:20px;font-size:14px;color:#8FA6B3}
@@ -283,14 +285,17 @@ footer b{color:#fff}
       <p>Bridges, heavy columns, night lifts and plate girders. Every photo here was taken by our tradespeople on sites where they worked.</p>
     </div>
     <div class="gallery">
-      <figure class="tile"><img src="arch-bridge-day.webp" alt="Steel arch bridge under construction" width="768" height="1024" loading="lazy"><figcaption>Steel arch bridge</figcaption></figure>
-      <figure class="tile"><img src="night-lift.webp" alt="Night lift of a steel structure by crane" width="768" height="1024" loading="lazy"><figcaption>Night lift, site installation</figcaption></figure>
-      <figure class="tile"><img src="founder-weld.webp" alt="Vertical weld on primed structural steel" width="825" height="1100" loading="lazy"><figcaption>Vertical weld, founder's work</figcaption></figure>
-      <figure class="tile"><img src="column-multipass.webp" alt="Multi-pass weld on a large steel column" width="937" height="1250" loading="lazy"><figcaption>Multi-pass column weld</figcaption></figure>
-      <figure class="tile"><img src="plate-girder.webp" alt="Welded plate girder with stiffeners" width="1280" height="960" loading="lazy"><figcaption>Plate girder fabrication</figcaption></figure>
-      <figure class="tile"><img src="column-connection.webp" alt="Large fabricated steel column connection" width="937" height="1250" loading="lazy"><figcaption>Column connection</figcaption></figure>
-      <figure class="tile"><img src="weld-prep-markings.webp" alt="Steel column with weld preparation and inspection markings" width="937" height="1250" loading="lazy"><figcaption>Weld prep &amp; QA markings</figcaption></figure>
-      <figure class="tile"><img src="welded-attachment.webp" alt="Fabricated steel attachment welded to a column" width="937" height="1250" loading="lazy"><figcaption>Welded attachment detail</figcaption></figure>
+      <figure class="tile wide"><img src="rooftop-steel-install.webp" alt="Rooftop steel installation on a Sydney high-rise" loading="lazy"><figcaption>Rooftop steel install, Sydney high-rise</figcaption></figure>
+      <figure class="tile"><img src="arch-bridge-day.webp" alt="Steel arch bridge under construction" loading="lazy"><figcaption>Steel arch bridge</figcaption></figure>
+      <figure class="tile"><img src="night-lift.webp" alt="Night lift of a steel structure by crane" loading="lazy"><figcaption>Night lift, site installation</figcaption></figure>
+      <figure class="tile"><img src="founder-weld.webp" alt="Vertical weld on primed structural steel" loading="lazy"><figcaption>Vertical weld, founder's work</figcaption></figure>
+      <figure class="tile"><img src="column-multipass.webp" alt="Multi-pass weld on a large steel column" loading="lazy"><figcaption>Multi-pass column weld</figcaption></figure>
+      <figure class="tile"><img src="butt-weld-shear-studs.webp" alt="Butt weld on steel plate with shear studs" loading="lazy"><figcaption>Butt weld &amp; shear studs</figcaption></figure>
+      <figure class="tile"><img src="base-plate-fabrication.webp" alt="Fabricated steel base plates with fillet welds" loading="lazy"><figcaption>Fabricated base plates</figcaption></figure>
+      <figure class="tile"><img src="plate-girder.webp" alt="Welded plate girder with stiffeners" loading="lazy"><figcaption>Plate girder fabrication</figcaption></figure>
+      <figure class="tile"><img src="column-connection.webp" alt="Large fabricated steel column connection" loading="lazy"><figcaption>Column connection</figcaption></figure>
+      <figure class="tile"><img src="weld-prep-markings.webp" alt="Steel column with weld preparation and inspection markings" loading="lazy"><figcaption>Weld prep &amp; QA markings</figcaption></figure>
+      <figure class="tile"><img src="welded-attachment.webp" alt="Fabricated steel attachment welded to a column" loading="lazy"><figcaption>Welded attachment detail</figcaption></figure>
     </div>
     <p class="photo-note">Photos show sites our tradespeople have worked on and their own welds. They are not projects contracted to AJ Toro Weldings.</p>
   </div>
@@ -388,7 +393,7 @@ footer b{color:#fff}
       <form class="enquiry" id="enquiry" action="https://formsubmit.co/projects@ajtoroweldings.com.au" method="POST">
         <input type="hidden" name="_subject" value="New crew enquiry – AJ Toro website">
         <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" value="https://amypark2023.github.io/aj-toro-website/thanks.html">
+        <input type="hidden" name="_next" value="https://ajtoroweldings.com.au/thanks.html">
         <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div class="f"><label for="f-name">Your name *</label><input id="f-name" name="Name" required autocomplete="name"></div>
         <div class="f"><label for="f-company">Company *</label><input id="f-company" name="Company" required autocomplete="organization"></div>
