@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Thank you | AJ Toro Weldings</title>
+<meta name="description" content="Sydney-based crews of senior welders, boilermakers and pipe fitters with 20+ years each. Power station, LNG and steel infrastructure experience. Now booking shutdowns.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
+</head>
+<body>
+<style>
+:root{
+  --navy:#0B2636; --navy-2:#0E3145; --ink:#14232D; --ink-2:#4B5D68; --line:#D6DDE1;
+  --paper:#F4F5F2; --white:#FFFFFF; --orange:#E99A43; --orange-ink:#14232D; --orange-deep:#A8641F;
+  --display:"Archivo", "Arial Narrow", Arial, sans-serif;
+  --body:"Source Sans 3", "Segoe UI", Arial, sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, Menlo, monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 var(--body)}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1.02;text-wrap:balance}
+h2{font-size:clamp(32px,4.6vw,52px);font-weight:800;letter-spacing:-.01em}
+h3{font-size:22px;font-weight:700}
+p{margin:0}
+.eyebrow{font:600 12px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--orange-deep)}
+.dark .eyebrow{color:var(--orange)}
+.btn{display:inline-flex;align-items:center;gap:10px;font:700 15px/1 var(--body);letter-spacing:.04em;text-transform:uppercase;text-decoration:none;padding:16px 22px;border-radius:2px;border:2px solid transparent;cursor:pointer}
+.btn-primary{background:var(--orange);color:var(--orange-ink)}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff;background:transparent}
+.btn-dark{background:var(--navy);color:#fff}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--navy);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo img{width:42px;height:auto;border-radius:3px;background:#fff}
+.logo b{font:800 19px/1 var(--display);letter-spacing:.06em}
+.logo small{display:block;font:500 10px/1.2 var(--mono);letter-spacing:.14em;color:#9FB3BF;margin-top:3px}
+nav.menu{display:flex;gap:26px}
+nav.menu a{font:600 13px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:#D5E0E6}
+nav.menu a:hover{color:var(--orange)}
+.top-cta{display:flex;align-items:center;gap:14px}
+.top-phone{font:600 15px/1 var(--mono);color:#fff;text-decoration:none;white-space:nowrap}
+.top .btn{padding:11px 16px;font-size:13px}
+
+/* hero */
+.hero{position:relative;color:#fff;background:var(--navy);overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:url("images/arch-bridge-night.webp") center/cover no-repeat;opacity:.42}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--navy) 18%,rgba(11,38,54,.55) 70%,rgba(11,38,54,.25))}
+.hero .wrap{position:relative;z-index:1;padding-block:84px 0}
+.hero h1{font-size:clamp(46px,7.6vw,96px);font-weight:900;letter-spacing:-.02em;max-width:13ch;margin-top:18px;text-transform:uppercase}
+.hero h1 em{font-style:normal;color:var(--orange)}
+.hero .lede{font-size:clamp(18px,2vw,21px);color:#D9E3E8;max-width:58ch;margin-top:22px}
+.hero .actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:72px;border-top:1px solid rgba(255,255,255,.15)}
+.stat{padding:22px 20px 26px 0;display:grid;gap:6px}
+.stat+.stat{padding-left:20px;border-left:1px solid rgba(255,255,255,.15)}
+.stat b{font:800 clamp(28px,3.4vw,40px)/1 var(--display);color:#fff}
+.stat span{font-size:14px;color:#AFC1CB;line-height:1.35}
+
+/* shutdown band */
+.band{background:var(--orange);color:var(--orange-ink)}
+.band .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;padding-block:20px}
+.band p{font:700 18px/1.3 var(--body)}
+.band p span{font-weight:400}
+.band a{font:700 14px/1 var(--body);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:3px}
+
+section{padding-block:96px}
+.head{display:grid;gap:14px;max-width:760px;margin-bottom:44px}
+.head p{color:var(--ink-2);font-size:18px}
+.dark{background:var(--navy);color:#fff}
+.dark .head p{color:#B9C9D2}
+
+/* about */
+.about{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
+.about .copy{display:grid;gap:18px}
+.about .copy p{color:var(--ink-2)}
+.about .copy p.big{font-size:21px;color:var(--ink);line-height:1.5}
+.about figure{margin:0;position:relative}
+.about figure img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.about figcaption,.tile figcaption{font:500 11px/1.3 var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.about figcaption{position:absolute;left:0;bottom:0;background:var(--navy);color:#fff;padding:10px 14px}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:var(--white);border:1px solid var(--line)}
+.svc{padding:30px 26px;display:grid;gap:12px;align-content:start;border-right:1px solid var(--line)}
+.svc:last-child{border-right:0}
+.svc .n{font:600 12px/1 var(--mono);color:var(--orange-deep);letter-spacing:.12em}
+.svc p{color:var(--ink-2);font-size:16px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.tags span{font:600 11px/1 var(--mono);letter-spacing:.06em;padding:6px 8px;background:var(--paper);border:1px solid var(--line);color:var(--ink)}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.tile{margin:0;position:relative;overflow:hidden;background:var(--navy-2)}
+.tile img{width:100%;aspect-ratio:3/4;object-fit:cover;transition:transform .5s ease}
+.tile:hover img{transform:scale(1.04)}
+.tile figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 14px 14px;color:#fff;background:linear-gradient(transparent,rgba(5,18,27,.88))}
+.photo-note{margin-top:20px;font-size:14px;color:#8FA6B3}
+
+/* crew */
+.crew{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.member{background:var(--white);border:1px solid var(--line);border-top:4px solid var(--orange);padding:28px;display:grid;gap:14px;align-content:start}
+.member .role{font:600 11px/1.3 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--orange-deep)}
+.member .yrs{font:800 44px/1 var(--display)}
+.member .yrs small{font:600 15px/1 var(--body);color:var(--ink-2);margin-left:6px}
+.member p{color:var(--ink-2);font-size:16px}
+.together{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;margin-top:28px;background:var(--navy);color:#fff;padding:30px 32px}
+.together b{font:900 64px/1 var(--display);color:var(--orange)}
+.together p{color:#D2DEE4;max-width:70ch}
+.fine{margin-top:16px;font-size:14px;color:var(--ink-2)}
+
+/* process + compliance */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:s}
+.steps li{display:grid;grid-template-columns:56px 1fr;gap:4px 18px;padding-block:22px;border-top:1px solid var(--line)}
+.steps li::before{counter-increment:s;content:"0" counter(s);grid-row:span 2;font:800 30px/1 var(--display);color:var(--orange-deep)}
+.steps li p{color:var(--ink-2);font-size:16px}
+.checks{list-style:none;margin:0;padding:0;display:grid}
+.checks li{display:flex;gap:14px;align-items:baseline;padding-block:15px;border-top:1px solid var(--line)}
+.checks li::before{content:"";flex:0 0 12px;height:12px;background:var(--orange);transform:translateY(1px)}
+
+/* fit */
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.fit div{padding:28px;border:1px solid rgba(255,255,255,.14)}
+.fit h3{font-size:18px;margin-bottom:14px;color:var(--orange)}
+.fit ul{margin:0;padding-left:18px;color:#D2DEE4;display:grid;gap:6px}
+.fit .no h3{color:#9FB3BF}
+.fit .no ul{color:#9FB3BF}
+
+/* contact */
+.contact{background:var(--orange);color:var(--orange-ink)}
+.contact .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:start}
+.contact .eyebrow{color:var(--navy)}
+.contact .head p{color:var(--ink)}
+.brief{list-style:none;margin:24px 0 30px;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 24px}
+.brief li{font-weight:600;padding-left:18px;position:relative}
+.brief li::before{content:"";position:absolute;left:0;top:.55em;width:8px;height:8px;background:var(--navy)}
+.enquiry{display:grid;grid-template-columns:1fr 1fr;gap:14px 18px;margin-top:28px}
+.enquiry .f{display:grid;gap:6px}
+.enquiry .full{grid-column:1/-1}
+.enquiry label{font:700 13px/1.2 var(--body);letter-spacing:.03em}
+.enquiry input,.enquiry select,.enquiry textarea{font:16px/1.4 var(--body);color:var(--ink);background:#FFF8EF;border:1.5px solid rgba(11,38,54,.35);border-radius:2px;padding:12px 12px;width:100%}
+.enquiry input:focus,.enquiry select:focus,.enquiry textarea:focus{outline:3px solid var(--navy);outline-offset:1px;border-color:var(--navy)}
+.enquiry .full:last-child{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:6px}
+.form-note{font-size:14px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.card{background:var(--navy);color:#fff;padding:34px;display:grid;gap:20px}
+.card .line{display:grid;gap:4px}
+.card .line span{font:600 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#8FA6B3}
+.card .line a,.card .line b{font:600 22px/1.25 var(--body);color:#fff;text-decoration:none;word-break:break-word}
+.card .row{display:flex;gap:10px;flex-wrap:wrap}
+.copy-btn{font:600 13px/1 var(--body);background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4);padding:10px 14px;cursor:pointer;border-radius:2px}
+.card .meta{font-size:15px;color:#B9C9D2;border-top:1px solid rgba(255,255,255,.14);padding-top:18px}
+
+footer{background:#06161F;color:#8FA6B3;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-block:30px}
+footer b{color:#fff}
+
+@media (max-width:1000px){
+  nav.menu{display:none}
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .svc:nth-child(2){border-right:0}
+  .svc:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .gallery{grid-template-columns:repeat(3,1fr)}
+  .crew{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  section{padding-block:68px}
+  .top-phone{display:none}
+  .hero .wrap{padding-block:56px 0}
+  .stats{grid-template-columns:1fr 1fr;margin-top:48px}
+  .stat:nth-child(3){padding-left:0;border-left:0}
+  .stat:nth-child(n+3){border-top:1px solid rgba(255,255,255,.15)}
+  .about,.two,.contact .grid,.fit{grid-template-columns:1fr;gap:36px}
+  .svc-grid{grid-template-columns:1fr}
+  .svc{border-right:0;border-bottom:1px solid var(--line)}
+  .svc:last-child{border-bottom:0}
+  .gallery{grid-template-columns:1fr 1fr;gap:8px}
+  .together{grid-template-columns:1fr;gap:12px;padding:24px}
+  .enquiry{grid-template-columns:1fr}
+  .logo small{display:none}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.tile img{transition:none}}
+</style>
+<main class="contact" style="min-height:100vh;display:grid;align-items:center">
+  <div class="wrap" style="padding-block:80px">
+    <div class="head">
+      <span class="eyebrow">Enquiry received</span>
+      <h2>Thanks. We've got your details.</h2>
+      <p>We'll review your job and reply within one business day. Need us sooner? Call 0422 033 555.</p>
+    </div>
+    <a class="btn btn-dark" href="./">&larr; Back to AJ Toro Weldings</a>
+  </div>
+</main>
+</body>
+</html>
