@@ -8,13 +8,13 @@
 <meta name="robots" content="index,follow">
 <meta property="og:title" content="AJ Toro Weldings — Senior welding crews, NSW">
 <meta property="og:description" content="Sydney-based crews of senior welders, boilermakers and pipe fitters with 20+ years each. Power station, LNG and steel infrastructure experience. Now booking shutdowns.">
-<meta property="og:image" content="images/arch-bridge-night.webp">
+<meta property="og:image" content="arch-bridge-night.webp">
 <meta property="og:type" content="website">
-<link rel="icon" href="images/logo.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"AJ Toro Weldings Pty Ltd","description":"Sydney-based crews of senior welders, boilermakers and pipe fitters with 20+ years each. Power station, LNG and steel infrastructure experience. Now booking shutdowns.","telephone":"+61422033555","email":"projects@ajtoroweldings.com.au","areaServed":"New South Wales, Australia","address":{"@type":"PostalAddress","addressRegion":"NSW","addressCountry":"AU"}}</script>
+<link rel="icon" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"AJ Toro Weldings Pty Ltd","description":"Sydney-based crews of senior welders, boilermakers and pipe fitters with 20+ years each. Power station, LNG and steel infrastructure experience. Now booking shutdowns.","telephone":"+61422033555","email":"projects@ajtoroweldings.com.au","areaServed":"New South Wales, Australia","address":{"@type":"PostalAddress","addressRegion":"NSW","addressCountry":"AU"}}</script>
 </head>
 <body>
 <style>
@@ -60,7 +60,7 @@ nav.menu a:hover{color:var(--orange)}
 
 /* hero */
 .hero{position:relative;color:#fff;background:var(--navy);overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;background:url("images/arch-bridge-night.webp") center/cover no-repeat;opacity:.42}
+.hero::before{content:"";position:absolute;inset:0;background:url("arch-bridge-night.webp") center/cover no-repeat;opacity:.42}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--navy) 18%,rgba(11,38,54,.55) 70%,rgba(11,38,54,.25))}
 .hero .wrap{position:relative;z-index:1;padding-block:84px 0}
 .hero h1{font-size:clamp(46px,7.6vw,96px);font-weight:900;letter-spacing:-.02em;max-width:13ch;margin-top:18px;text-transform:uppercase}
@@ -151,6 +151,15 @@ section{padding-block:96px}
 .brief{list-style:none;margin:24px 0 30px;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 24px}
 .brief li{font-weight:600;padding-left:18px;position:relative}
 .brief li::before{content:"";position:absolute;left:0;top:.55em;width:8px;height:8px;background:var(--navy)}
+.enquiry{display:grid;grid-template-columns:1fr 1fr;gap:14px 18px;margin-top:28px}
+.enquiry .f{display:grid;gap:6px}
+.enquiry .full{grid-column:1/-1}
+.enquiry label{font:700 13px/1.2 var(--body);letter-spacing:.03em}
+.enquiry input,.enquiry select,.enquiry textarea{font:16px/1.4 var(--body);color:var(--ink);background:#FFF8EF;border:1.5px solid rgba(11,38,54,.35);border-radius:2px;padding:12px 12px;width:100%}
+.enquiry input:focus,.enquiry select:focus,.enquiry textarea:focus{outline:3px solid var(--navy);outline-offset:1px;border-color:var(--navy)}
+.enquiry .full:last-child{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:6px}
+.form-note{font-size:14px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
 .card{background:var(--navy);color:#fff;padding:34px;display:grid;gap:20px}
 .card .line{display:grid;gap:4px}
 .card .line span{font:600 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#8FA6B3}
@@ -184,7 +193,7 @@ footer b{color:#fff}
   .svc:last-child{border-bottom:0}
   .gallery{grid-template-columns:1fr 1fr;gap:8px}
   .together{grid-template-columns:1fr;gap:12px;padding:24px}
-  .brief{grid-template-columns:1fr}
+  .enquiry{grid-template-columns:1fr}
   .logo small{display:none}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.tile img{transition:none}}
@@ -193,7 +202,7 @@ footer b{color:#fff}
 <header class="top">
   <div class="wrap">
     <a class="logo" href="#top" aria-label="AJ Toro Weldings home">
-      <img src="images/logo.png" alt="" width="42" height="34">
+      <img src="logo.png" alt="" width="42" height="34">
       <span><b>AJ TORO</b><small>WELDINGS PTY LTD</small></span>
     </a>
     <nav class="menu" aria-label="Main">
@@ -244,7 +253,7 @@ footer b{color:#fff}
       <p>We supply experienced trades to fabrication shops, builders, head contractors and plant operators across NSW. You tell us the scope, roster and start date. We confirm who is coming, send their tickets and insurance, and stay your single point of contact until the job is done.</p>
     </div>
     <figure>
-      <img src="images/workshop-girder.webp" alt="Large welded steel girder in a fabrication workshop" width="1280" height="960" loading="lazy">
+      <img src="workshop-girder.webp" alt="Large welded steel girder in a fabrication workshop" width="1280" height="960" loading="lazy">
       <figcaption>Heavy fabrication · founder's own work</figcaption>
     </figure>
   </div>
@@ -274,14 +283,14 @@ footer b{color:#fff}
       <p>Bridges, heavy columns, night lifts and plate girders. Every photo here was taken by our tradespeople on sites where they worked.</p>
     </div>
     <div class="gallery">
-      <figure class="tile"><img src="images/arch-bridge-day.webp" alt="Steel arch bridge under construction" width="768" height="1024" loading="lazy"><figcaption>Steel arch bridge</figcaption></figure>
-      <figure class="tile"><img src="images/night-lift.webp" alt="Night lift of a steel structure by crane" width="768" height="1024" loading="lazy"><figcaption>Night lift, site installation</figcaption></figure>
-      <figure class="tile"><img src="images/founder-weld.webp" alt="Vertical weld on primed structural steel" width="825" height="1100" loading="lazy"><figcaption>Vertical weld, founder's work</figcaption></figure>
-      <figure class="tile"><img src="images/column-multipass.webp" alt="Multi-pass weld on a large steel column" width="937" height="1250" loading="lazy"><figcaption>Multi-pass column weld</figcaption></figure>
-      <figure class="tile"><img src="images/plate-girder.webp" alt="Welded plate girder with stiffeners" width="1280" height="960" loading="lazy"><figcaption>Plate girder fabrication</figcaption></figure>
-      <figure class="tile"><img src="images/column-connection.webp" alt="Large fabricated steel column connection" width="937" height="1250" loading="lazy"><figcaption>Column connection</figcaption></figure>
-      <figure class="tile"><img src="images/weld-prep-markings.webp" alt="Steel column with weld preparation and inspection markings" width="937" height="1250" loading="lazy"><figcaption>Weld prep &amp; QA markings</figcaption></figure>
-      <figure class="tile"><img src="images/welded-attachment.webp" alt="Fabricated steel attachment welded to a column" width="937" height="1250" loading="lazy"><figcaption>Welded attachment detail</figcaption></figure>
+      <figure class="tile"><img src="arch-bridge-day.webp" alt="Steel arch bridge under construction" width="768" height="1024" loading="lazy"><figcaption>Steel arch bridge</figcaption></figure>
+      <figure class="tile"><img src="night-lift.webp" alt="Night lift of a steel structure by crane" width="768" height="1024" loading="lazy"><figcaption>Night lift, site installation</figcaption></figure>
+      <figure class="tile"><img src="founder-weld.webp" alt="Vertical weld on primed structural steel" width="825" height="1100" loading="lazy"><figcaption>Vertical weld, founder's work</figcaption></figure>
+      <figure class="tile"><img src="column-multipass.webp" alt="Multi-pass weld on a large steel column" width="937" height="1250" loading="lazy"><figcaption>Multi-pass column weld</figcaption></figure>
+      <figure class="tile"><img src="plate-girder.webp" alt="Welded plate girder with stiffeners" width="1280" height="960" loading="lazy"><figcaption>Plate girder fabrication</figcaption></figure>
+      <figure class="tile"><img src="column-connection.webp" alt="Large fabricated steel column connection" width="937" height="1250" loading="lazy"><figcaption>Column connection</figcaption></figure>
+      <figure class="tile"><img src="weld-prep-markings.webp" alt="Steel column with weld preparation and inspection markings" width="937" height="1250" loading="lazy"><figcaption>Weld prep &amp; QA markings</figcaption></figure>
+      <figure class="tile"><img src="welded-attachment.webp" alt="Fabricated steel attachment welded to a column" width="937" height="1250" loading="lazy"><figcaption>Welded attachment detail</figcaption></figure>
     </div>
     <p class="photo-note">Photos show sites our tradespeople have worked on and their own welds. They are not projects contracted to AJ Toro Weldings.</p>
   </div>
@@ -374,12 +383,26 @@ footer b{color:#fff}
       <div class="head" style="margin-bottom:0">
         <span class="eyebrow">Request a crew</span>
         <h2>Need senior trades on site?</h2>
-        <p>Send us these details and we'll reply within one business day.</p>
+        <p>Fill in what you know and we'll reply within one business day.</p>
       </div>
-      <ul class="brief">
-        <li>Site location</li><li>Trades needed</li><li>Number of people</li><li>Start date</li><li>Roster and hours</li><li>Expected duration</li>
-      </ul>
-      <a class="btn btn-dark" href="mailto:projects@ajtoroweldings.com.au?subject=Crew%20enquiry%20%E2%80%93%20AJ%20Toro&amp;body=Site%20location%3A%0ATrades%20needed%3A%0ANumber%20of%20people%3A%0AStart%20date%3A%0ARoster%20%2F%20hours%3A%0AExpected%20duration%3A%0AOther%20requirements%3A">Email your enquiry &rarr;</a>
+      <form class="enquiry" id="enquiry" action="https://formsubmit.co/projects@ajtoroweldings.com.au" method="POST">
+        <input type="hidden" name="_subject" value="New crew enquiry – AJ Toro website">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://amypark2023.github.io/aj-toro-website/thanks.html">
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="f"><label for="f-name">Your name *</label><input id="f-name" name="Name" required autocomplete="name"></div>
+        <div class="f"><label for="f-company">Company *</label><input id="f-company" name="Company" required autocomplete="organization"></div>
+        <div class="f"><label for="f-email">Email *</label><input id="f-email" type="email" name="email" required autocomplete="email"></div>
+        <div class="f"><label for="f-phone">Phone *</label><input id="f-phone" type="tel" name="Phone" required autocomplete="tel"></div>
+        <div class="f"><label for="f-site">Site location *</label><input id="f-site" name="Site location" required placeholder="e.g. Port Kembla"></div>
+        <div class="f"><label for="f-trades">Trades needed</label><select id="f-trades" name="Trades needed"><option>Welders</option><option>Boilermakers</option><option>Pipe fitters</option><option>Mixed crew</option><option>Not sure yet</option></select></div>
+        <div class="f"><label for="f-people">Number of people</label><input id="f-people" type="number" min="1" max="50" name="Number of people" placeholder="e.g. 3"></div>
+        <div class="f"><label for="f-start">Start date</label><input id="f-start" type="date" name="Start date"></div>
+        <div class="f"><label for="f-roster">Roster / hours</label><input id="f-roster" name="Roster" placeholder="e.g. 12h days, 7 on"></div>
+        <div class="f"><label for="f-duration">Expected duration</label><input id="f-duration" name="Duration" placeholder="e.g. 4 weeks"></div>
+        <div class="f full"><label for="f-msg">Scope and anything else we should know</label><textarea id="f-msg" name="Message" rows="4"></textarea></div>
+        <div class="f full"><button class="btn btn-dark" type="submit">Send enquiry &rarr;</button><span class="form-note">Prefer email? Write to projects@ajtoroweldings.com.au</span></div>
+      </form>
     </div>
     <div class="card">
       <div class="line"><span>Call</span><a href="tel:+61422033555" id="phone">0422 033 555</a></div>
